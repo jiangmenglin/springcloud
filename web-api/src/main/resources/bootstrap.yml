@@ -1,11 +1,16 @@
 spring:
   application:
-    name: a-bootiful-client
+    name: web-api
   cloud:
     config:
       uri: http://localhost:8888
       profile: refresh
       label: master
+    rabbitmq:
+        host: 127.0.0.1
+        port: 5672
+        username: guest
+        password: guest
 management:
   security:
     enabled: false
