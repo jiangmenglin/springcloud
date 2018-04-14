@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: a-bootiful-client
+  cloud:
+    config:
+      uri: http://localhost:8888
+      profile: refresh
+      label: master
+management:
+  security:
+    enabled: false
